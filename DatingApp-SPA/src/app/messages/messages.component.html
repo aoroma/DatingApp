@@ -36,11 +36,11 @@
         <td>
           <div *ngIf="messageContainer != 'Outbox'">
                 <img src={{message?.senderPhotoUrl}} class="img-circle rounded-circle mr-1">
-                <strong>{{message.senderKnowAs}}</strong>
+                <strong>{{message.senderKnownAs}}</strong>
           </div>
           <div *ngIf="messageContainer == 'Outbox'">
                 <img src={{message?.recipientPhotoUrl}} class="img-circle rounded-circle mr-1">
-                <strong>{{message.recipientKnowAs}}</strong>
+                <strong>{{message.recipientKnownAs}}</strong>
           </div>
         </td>
         <td>{{message.messageSent | timeAgo}}</td>
